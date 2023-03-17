@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -24,7 +25,7 @@
             <ul class="menu-nav-items">
                 <li><a href="#informations">INFORMAÇÕES</a></li>
                 <li><a href="#plans">PLANOS</a></li>
-                <li><a href="#">PREÇOS</a></li>
+                <li><a href="price.html">PREÇOS</a></li>
                 <li><a href="#contact">CONTATO</a></li>
             </ul>
         </nav>
@@ -33,46 +34,46 @@
     <main>
         <section class="section-banner">
             <div class="banner-background-container">
-                <div class="text-banner-container">
+                <div class="text-banner-container" data-aos="fade-left">
                     <p>Simples - Fácil de usar - 10x mais rápido</p>
                     <h2>O melhor serviço de hospedagem na web para o seu site.</h2>
                     <p>Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa de lentidão na sua hospedagem.</p>
                 </div>
 
-                <div class="image-banner-container">
+                <div class="image-banner-container" data-aos="fade-in">
                     <img src="./images/imagem-banner.png" alt="Imagem do banner">
                 </div>
             </div>
         </section>
 
         <div class="announcement-container">
-            <div class="text-announcement-container">
+            <div class="text-announcement-container" data-aos="fade-left">
                 <h2>Hospede o seu site por apenas R$29 por mês.</h2>
                 <p>Também temos planos gratuitos. Adquira já o seu.</p>
             </div>
 
-            <a href=""><img src="/images/icone-foguete.png" alt="icone de foguete">TABELA DE PREÇOS</a>
+            <a href="price.html" data-aos="fade-in"><img src="/images/icone-foguete.png" alt="icone de foguete">TABELA DE PREÇOS</a>
         </div>
 
         <section class="section-informations" id="informations">
             <div class="informations-background-container">
-                <div class="informations-title-container">
+                <div class="informations-title-container" data-aos="fade-down">
                     <h2>Existem diversos serviços de hospedagem de sites. Mas por que você deve <span class="color-blue">nos escolher</span>?</h2> 
                 </div>
                 <div class="informations-items-container">
-                    <div class="information-item">
+                    <div class="information-item" data-aos="fade-down" data-aos-delay="100">
                         <img src="/images/icone-engrenagens.png" alt="Imagem de engrenagem">
                         <h3>Fácil de configurar</h3>
                         <p>Facilmente configurável em plataformas CMS populares - Wordpress, Joomla ...</p>
                     </div>
 
-                    <div class="information-item">
+                    <div class="information-item" data-aos="fade-down" data-aos-delay="300">
                         <img src="/images/cloud-icone.png" alt="Imagem de nuvem">
                         <h3>Servidores 100% Online</h3>
                         <p>Serviços que operam 100% do tempo para manter o seu site online...</p>
                     </div>
 
-                    <div class="information-item">
+                    <div class="information-item" data-aos="fade-down" data-aos-delay="400">
                         <img src="/images/icone-suporte.png" alt="imagem de suporte">
                         <h3>Suporte 24/7</h3>
                         <p>Suporte altamente treinado e especializado em soluções de Cloud...</p>
@@ -82,12 +83,12 @@
         </section>
 
         <section class="section-plans" id="plans">
-            <div class="plans-title-container">
+            <div class="plans-title-container" data-aos="fade-down">
                 <h2>Pague <span class="color-blue">somente</span> pelo que for usar. Sem cobranças adicionais!</h2>
             </div>
 
             <div class="table-container">
-                <table class="table" cellspacing="0">
+                <table class="table" cellspacing="0" data-aos="fade-down" data-aos-delay="200">
                     <thead>
                         <tr>
                             <th>PESSOAL</th>
@@ -146,18 +147,18 @@
         </section>
 
         <div class="announcement-container-two">
-            <div class="text-announcement-container-two">
+            <div class="text-announcement-container-two" data-aos="fade-left">
                 <h2>Mais de 20.000 pessoas confiam na AlfaTech.<br/> 
                 Seja um deles você também!</h2>
             </div>
 
-            <a href=""><img src="/images/icone-foguete.png" alt="icone de foguete">TABELA DE PREÇOS</a>
+            <a href="price.html" data-aos="fade-in"><img src="/images/icone-foguete.png" alt="icone de foguete">TABELA DE PREÇOS</a>
         </div>
     </main>
 
     <footer class="footer" id="contact">
         <div class="informations-footer">
-            <div class="logo-container">
+            <div class="logo-container" data-aos="fade-down">
                 <img src="/images/logo-icone.png" alt="logo AlfaTech">
                 <div class="text-logo-container">
                     <h1>AlfaTech</h1>
@@ -165,7 +166,7 @@
                 </div>
             </div>
 
-            <ul class="contact-items">
+            <ul class="contact-items" data-aos="fade-down">
                 <li>Telefone & Whatsapp: (21) 99999-5555</li>
                 <li>E-mail: suporte@alfatech.com</li>
                 <li>Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro</li>
@@ -176,5 +177,12 @@
             <p>Desenvolvido por <span class="color-blue">Ezequiel Brigida</span></p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+      </script>
 </body>
 </html>

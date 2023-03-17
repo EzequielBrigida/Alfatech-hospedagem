@@ -249,6 +249,11 @@ body {
 
 .table tbody tr:nth-child(even) {
     background-color: #f6f6f6;
+    transition: all 0.3s;
+}
+.table tbody tr:nth-child(even):hover {
+    background-color: #eae8e8;
+    cursor: pointer;
 }
 
 .image-table th img {
