@@ -340,7 +340,7 @@ body {
 
 /*Aplicação de media queries (320px - 425px)*/
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 528px) {
 
     body {
         overflow-x: hidden;
@@ -383,12 +383,14 @@ body {
     }
     .banner-background-container
     .text-banner-container h2 {
+        width: 80%;
         font-size: 20px;
         text-align: center;
     }
     .banner-background-container
     .text-banner-container p {
         text-align: center;
+        width: 80%;
     }
 
     .banner-background-container
@@ -405,7 +407,15 @@ body {
         gap: 20px;
     }
     .announcement-container
+    .text-announcement-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .announcement-container
     .text-announcement-container h2 {
+        width: 80%;
         font-size: 20px;
         text-align: center;
     }
@@ -428,17 +438,18 @@ body {
     }
     .informations-background-container
     .informations-title-container {
-        width: 90%;
+        width: 100%;
         height: 20%;
     }
     .informations-background-container
     .informations-title-container h2 {
+        width: 80%;
         font-size: 20px;
     }
 
     .section-informations
     .informations-items-container {
-        width: 90%;
+        width: 100%;
         height: 75%;  
         display: flex;
         flex-direction: column; 
@@ -448,11 +459,10 @@ body {
     .section-informations
     .informations-items-container
     .information-item {
-        width: 100%;
+        width: 80%;
     }
 
     .section-plans {
-        width: 100%;
         height: 120vh;
         display: flex;
         flex-direction: column;
@@ -460,14 +470,14 @@ body {
     }
     .section-plans
     .plans-title-container {
-        width: 95%;
+        width: 100%;
         display: flex;
         justify-content: center;
         
     }
     .section-plans
     .plans-title-container h2 {
-        width: 100%;
+        width: 80%;
         font-size: 20px;
         text-align: center;
     }
@@ -480,7 +490,7 @@ body {
     }
     .section-plans
     .table {
-        width: 300px;
+        width: 80%;
     }
     .section-plans
     .table th {
@@ -502,6 +512,7 @@ body {
     }
 
     .announcement-container-two {
+        width: 100%;
         height: 35vh;
         display: flex;
         flex-direction: column;
@@ -510,13 +521,15 @@ body {
         gap: 20px;
     }
     .announcement-container-two
-    .text-announcement-container-two h2 {
-        font-size: 20px;
-        text-align: center;
+    .text-announcement-container-two {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .announcement-container-two
-    .text-announcement-container-two p {
-        font-size: 12px;
+    .text-announcement-container-two h2 {
+        width: 80%;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -527,6 +540,7 @@ body {
 
     .footer 
     .informations-footer {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -550,12 +564,20 @@ body {
     }
 
     .footer 
+    .informations-footer
+    .contact-items {
+        width: 80%;
+    }
+
+    .footer 
     .copyright-container {
+        width: 100%;
         height: 25vh;
     }
 
     .footer 
     .copyright-container p {
+        width: 80%;
         font-size: 15px;
         text-align: center;
     }
